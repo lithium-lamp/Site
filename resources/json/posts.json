@@ -1,15 +1,5 @@
 [
     {
-        "title": "Svelteadmin initial demo",
-        "link": "https://youtu.be/q5DpT8R_rn8",
-        "date": "30-08-2024"
-    },
-    {
-        "title": "Go rest api video demo v1.0.0-alpha",
-        "link": "https://youtu.be/WokQDzrYLSo?si=YMFxOmTQyDMnA3n2",
-        "date": "22-08-2024"
-    },
-    {
         "title": "Programming projects (swe)",
         "link": "./resources/pdf/Programmeringsprojekt.pdf",
         "date": "20-08-2024"
@@ -22,11 +12,6 @@
     {
         "title": "Signed reference",
         "link": "./resources/pdf/Victor_Lindholm_sign.pdf",
-        "date": "20-08-2024"
-    },
-    {
-        "title": "Go rest api video demo",
-        "link": "https://youtu.be/_F4zs_s4yQg?si=vngfVwfqiF9R3QGk",
         "date": "20-08-2024"
     }
 ]

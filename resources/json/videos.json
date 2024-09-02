@@ -1,0 +1,17 @@
+[
+    {
+        "title": "Svelteadmin initial demo",
+        "link": "https://www.youtube.com/embed/q5DpT8R_rn8?si=dbkGw-WWLjb2CGH1",
+        "date": "30-08-2024"
+    },
+    {
+        "title": "Go rest api video demo v1.0.0-alpha",
+        "link": "https://www.youtube.com/embed/WokQDzrYLSo?si=kaJHedtxAwTwLVrU",
+        "date": "22-08-2024"
+    },
+    {
+        "title": "Go rest api video demo",
+        "link": "https://www.youtube.com/embed/_F4zs_s4yQg?si=Pc8nTfAIYeiNcv1b",
+        "date": "20-08-2024"
+    }
+]
