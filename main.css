@@ -1,0 +1,113 @@
+section:nth-child(1) {
+    background-color: tomato;
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+}
+
+.status {
+    width: -webkit-fill-available;
+    margin-bottom: 10px;
+    width: 300px;
+    margin: 15px auto;
+}
+
+.status a {
+    border: 2px solid #000000;
+    border-radius: 8px;
+    width: -webkit-fill-available;
+}
+
+.status-button {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 8px 16px;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+    border: 1px solid #bbbbbb;
+}
+
+.status:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-color: #9db5cf;
+}
+
+.status-enabled {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    margin-right: 8px;
+    background-color: greenyellow;
+    border-width: 1px;
+    border-color: white;
+    border-style: solid;
+    box-shadow: 0px 0px 1px 0.1px black;
+}
+
+.status-awaiting {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    margin-right: 8px;
+    background-color: rgb(243, 213, 93);
+    border-width: 1px;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    box-shadow: 0px 0px 1px 0.1px black;
+}
+
+.status-disabled {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    margin-right: 8px;
+    background-color: rgb(247, 83, 61);
+    border-width: 1px;
+    border-color: white;
+    border-style: solid;
+    box-shadow: 0px 0px 1px 0.1px black;
+}
+
+.status-name {
+    font-size: 20px;
+    color: #333;
+    flex: 1;
+    font-family: Arial;
+    letter-spacing: 3px;
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: black;
+}
+
+.navbutton {
+    flex: 1 100%;
+    margin: auto;
+    text-align: center;
+    padding: 15px;
+}
+
+.navbutton a {
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    border-radius: 6px;
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.8);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+    border: 2px solid #000000;
+    height: 200px;
+}
+
+.navbutton a span {
+    font-size: 50px;
+    color: #333;
+    flex: 1;
+    font-family: Arial;
+    letter-spacing: 3px;
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: black;
+}

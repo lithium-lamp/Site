@@ -3,6 +3,7 @@ body {
   height: 100%;
   margin: 0;
   scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
 }
 
 main {
@@ -14,10 +15,6 @@ section {
     box-sizing: border-box;
     padding: 25px;
     scroll-snap-align: start;
-}
-
-section:nth-child(1) {
-    background-color: tomato;
 }
 
 section:nth-child(3) {

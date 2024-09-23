@@ -207,43 +207,8 @@ section:nth-child(2) {
     margin: 20px 0;
 }
 
-
-
-
-.inlinetext {
-    display: flex;
-    justify-content: space-between;
-}
-
-.inlinetext p {
-    margin: 0;
-}
-
-.inlinetext a {
-    font-size: 0.9em;
-}
-
-.left {
-    position: absolute;
-    height: 100vh;
-    left: 10px;
-}
-
-.right {
-    position: absolute;
-    height: 700px;
-    right: 10px;
-    display: grid;
-}
-
-.centered {
-    position: absolute;
-    width: 600px;
-    left: 30%;
-}
-
 .trns-text {
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: rgba(255,255,255,0.90);
     -webkit-background-clip: text;
     background-clip: text;
     display:block;
@@ -256,4 +221,5 @@ section:nth-child(2) {
     max-width: 0px;
     -webkit-text-stroke-width: 3px;
     -webkit-text-stroke-color: black;
-    text-shadow: 5px 1px 2px rgba(255, 255, 255, 0.74);}
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.74);
+}

@@ -6,17 +6,62 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Victor Lindholm</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./main.css">
     <link rel="stylesheet" href="./projects.css">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
   </head>
   <body>
     <main>
-      <section>
-        <h1 class="trns-text">
-          VICTOR<br>LINDHOLM
-        </h1>
+      <section id="sec1">
+          <div style="display: flex; flex-direction: row; width: 100%;">
+            <div style="flex:1 100%;">
+              <h1 class="trns-text">
+                VICTOR<br>LINDHOLM
+              </h1>
+            </div>
+            <div style="flex:1 100%">
+              <div class="status">
+                <a class="status-button" href="https://github.com/lithium-lamp">
+                  <span class="status-name">Portfolio status</span>
+                  <div class="status-enabled"></div>
+                </a>
+              </div>
+              <div class="status">
+                <a class="status-button" href="https://github.com/lithium-lamp">
+                  <span class="status-name">Chess status</span>
+                  <div class="status-awaiting"></div>
+                </a>
+              </div>
+            <div class="status">
+              <a class="status-button" href="https://github.com/lithium-lamp">
+                <span class="status-name">HOUSEHOLD status</span>
+                <div class="status-disabled"></div>
+              </a>
+            </div>
+            <div class="status">
+              <a class="status-button" href="https://github.com/lithium-lamp">
+                <span class="status-name">Facedet. status</span>
+                <div class="status-disabled"></div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div style="display: flex; flex-direction: row; width: 100%;">
+          <div class="navbutton">
+            <a style="background-color: cadetblue;"" href="#sec2">
+              <span>PROJECTS</span>
+            </a>
+          </div>
+          <div class="navbutton">
+            <a style="background-color: burlywood;"" href="#sec3">
+              <span>DEMOS</span>
+            </a>
+          </div>
+        </div>
+
       </section>
-      <section>
+      <section id="sec2">
         <div class="overlap">
             <div style="flex: 2 150%; order: 1" id="videoDisplay"></div>
           <div style="flex: 1 100%; order: 2;">
@@ -65,7 +110,7 @@
           </div>
         </div>
       </section>
-      <section>
+      <section id="sec3">
         <h1 class="trns-text">
           DEMO<br>PAGE
         </h1>
