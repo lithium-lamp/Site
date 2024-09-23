@@ -1,0 +1,259 @@
+section:nth-child(2) {
+    display: block;
+    background-color: cadetblue;
+    overflow: hidden;
+}
+
+.overlap {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+
+/*      VIDEO DISPLAY     */
+
+#videoDisplay {
+    font-family: Arial, sans-serif;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    text-align: left;
+    padding: 1rem 1rem;
+    vertical-align: middle;
+    overflow-y: scroll;
+}
+
+#videoDisplay h3 {
+    color: #2c3e50;
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+#videoDisplay p {
+    color: #555;
+    font-size: 0.9em;
+    margin-top: 0;
+}
+
+#videoDisplay a {
+    color: #3498db;
+    text-decoration: none;
+    font-size: 0.95em;
+    word-wrap: break-word;
+}
+
+#videoDisplay a:hover {
+    text-decoration: underline;
+}
+
+#videoDisplay hr {
+    border: 0;
+    height: 1px;
+    background-color: #ddd;
+    margin: 20px 0;
+}
+
+.player {
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 1;
+    width: 320px;
+    height: 180px;
+}
+
+
+
+/*      GIT DISPLAY     */
+
+#gitDisplay {
+    width: -webkit-fill-available;
+    margin-bottom: 10px;
+}
+
+#gitDisplay a {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: -webkit-fill-available;
+}
+
+.profile-button {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 8px 16px;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+    border: 1px solid #bbbbbb;
+}
+
+.profile-button:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-color: #9db5cf;
+}
+
+.profile-pic {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.profile-name {
+    font-size: 14px;
+    color: #333;
+}
+
+
+/*      DATA DISPLAY     */
+
+#dataDisplay {
+    font-family: Arial, sans-serif;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    width: -webkit-fill-available;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: left;
+    display: inline-block;
+    padding: 1rem 1rem;
+    vertical-align: middle;
+    overflow-y: scroll;
+    flex: 2;
+}
+
+#dataDisplay h3 {
+    color: #2c3e50;
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+#dataDisplay p {
+    color: #555;
+    font-size: 0.9em;
+    margin-top: 0;
+}
+
+#dataDisplay a {
+    color: #3498db;
+    text-decoration: none;
+    font-size: 0.95em;
+    word-wrap: break-word;
+}
+
+#dataDisplay a:hover {
+    text-decoration: underline;
+}
+
+#dataDisplay hr {
+    border: 0;
+    height: 1px;
+    background-color: #ddd;
+    margin: 20px 0;
+}
+
+/*      CONTACT DISPLAY     */
+
+#contactDisplay {
+    font-family: Arial, sans-serif;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    width: -webkit-fill-available;
+    margin-top: 10px;
+    text-align: left;
+    display: inline-block;
+    padding: 1rem 1rem;
+    vertical-align: middle;
+    flex: 1;
+}
+
+#contactDisplay h3 {
+    color: #2c3e50;
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+#contactDisplay p {
+    color: #555;
+    font-size: 0.9em;
+    margin-top: 0;
+}
+
+#contactDisplay a {
+    color: #3498db;
+    text-decoration: none;
+    font-size: 0.95em;
+    word-wrap: break-word;
+}
+
+#contactDisplay a:hover {
+    text-decoration: underline;
+}
+
+#contactDisplay hr {
+    border: 0;
+    height: 1px;
+    background-color: #ddd;
+    margin: 20px 0;
+}
+
+
+
+
+.inlinetext {
+    display: flex;
+    justify-content: space-between;
+}
+
+.inlinetext p {
+    margin: 0;
+}
+
+.inlinetext a {
+    font-size: 0.9em;
+}
+
+.left {
+    position: absolute;
+    height: 100vh;
+    left: 10px;
+}
+
+.right {
+    position: absolute;
+    height: 700px;
+    right: 10px;
+    display: grid;
+}
+
+.centered {
+    position: absolute;
+    width: 600px;
+    left: 30%;
+}
+
+.trns-text {
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    display:block;
+    font-size: 120px;
+    font-family: arial;
+    text-align: center;
+    margin-top: -20px;
+    font-weight: bold;
+    letter-spacing: -6px;
+    max-width: 0px;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: black;
+    text-shadow: 5px 1px 2px rgba(255, 255, 255, 0.74);}
