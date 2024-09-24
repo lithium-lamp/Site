@@ -117,6 +117,19 @@ section:nth-child(1) {
     height: 200px;
 }
 
+.navbutton a:hover {
+    transition-duration: 500ms;
+    background-color: white;
+}
+
+.projcol a {
+    background-color: cadetblue
+}
+
+.democol a {
+    background-color: burlywood;
+}
+
 .navbutton a span {
     font-size: 50px;
     color: #333;

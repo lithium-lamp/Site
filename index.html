@@ -16,36 +16,39 @@
         along with plenty of other features that are to be added </p>
       <p>Please view this page using a bigger screen</p>
     </div>
+    <div style="position: absolute;top: 0;right: 0;background: repeating-linear-gradient(-55deg, #000000, #000000 15px, #e2d629 15px, #e2d629 30px);color: white;font-size: 20px;padding: 5px; text-shadow: 0px 0px 8px black; text-align: center; width: 100%">
+      WORK IN PROGRESS
+    </div>
     <main>
       <section id="sec1">
           <div style="display: flex; flex-direction: row; width: 100%;">
             <div style="flex:1 100%;">
-              <h1 class="trns-text">
+              <h1 style="max-width: none; text-align: left;" class="trns-text noselect">
                 VICTOR<br>LINDHOLM
               </h1>
             </div>
             <div style="flex:1 100%">
               <div class="status">
                 <a class="status-button" href="https://github.com/lithium-lamp/site">
-                  <span class="status-name">Portfolio</span>
+                  <span class="status-name noselect">Portfolio</span>
                   <div class="status-enabled"></div>
                 </a>
               </div>
               <div class="status">
                 <a class="status-button" href="https://github.com/lithium-lamp/Chess">
-                  <span class="status-name">Chess</span>
+                  <span class="status-name noselect">Chess</span>
                   <div class="status-awaiting"></div>
                 </a>
               </div>
             <div class="status">
               <a class="status-button" href="https://github.com/lithium-lamp/gorestapi">
-                <span class="status-name">Householding index</span>
+                <span class="status-name noselect">Householding index</span>
                 <div class="status-disabled"></div>
               </a>
             </div>
             <div class="status">
               <a class="status-button" href="https://github.com/lithium-lamp/mlpackopencv">
-                <span class="status-name">Face detection</span>
+                <span class="status-name noselect">Face detection</span>
                 <div class="status-disabled"></div>
               </a>
             </div>
@@ -53,14 +56,14 @@
         </div>
 
         <div style="display: flex; flex-direction: row; width: 100%;">
-          <div class="navbutton">
-            <a style="background-color: cadetblue;"" href="#sec2">
-              <span>PROJECTS</span>
+          <div class="navbutton projcol">
+            <a href="#sec2">
+              <span class="noselect">PROJECTS</span>
             </a>
           </div>
-          <div class="navbutton">
-            <a style="background-color: burlywood;"" href="#sec3">
-              <span>DEMOS</span>
+          <div class="navbutton democol">
+            <a href="#sec3">
+              <span class="noselect">DEMOS</span>
             </a>
           </div>
         </div>
@@ -68,47 +71,47 @@
       </section>
       <section id="sec2">
         <div class="overlap">
-            <div style="flex: 2 150%; order: 1" id="videoDisplay"></div>
+            <div style="flex: 2 200%; order: 1" id="videoDisplay"></div>
           <div style="flex: 1 100%; order: 2;">
-            <h1 class="trns-text">
+            <h1 class="trns-text noselect">
               PRO
             </h1>
-            <h1 class="trns-text">
+            <h1 class="trns-text noselect">
               JEC
             </h1>
-            <h1 class="trns-text">
+            <h1 class="trns-text noselect">
               TS...
             </h1>
-            <h1 class="trns-text">
+            <h1 class="trns-text noselect">
               PRO
             </h1>
           </div>
           <div style="flex: 1 100%; order: 3; align-content: center;">
-            <h1 class="trns-text">
+            <h1 class="trns-text noselect">
               JEC
             </h1>
-            <h1 class="trns-text">
+            <h1 class="trns-text noselect">
               TS...
             </h1>
-            <h1 class="trns-text">
+            <h1 class="trns-text noselect">
               PRO
             </h1>
           </div>
           <div style="flex: 1 100%; order: 4;">
-            <h1 class="trns-text">
+            <h1 class="trns-text noselect">
               JEC
             </h1>
-            <h1 class="trns-text">
+            <h1 class="trns-text noselect">
               TS...
             </h1>
-            <h1 class="trns-text">
+            <h1 class="trns-text noselect">
               PRO
             </h1>
-            <h1 class="trns-text">
+            <h1 class="trns-text noselect">
               JEC
             </h1>
           </div>
-          <div style="flex: 2 150%; order: 5; display: flex; height: -webkit-fill-available; flex-direction: column;">
+          <div style="flex: 2 200%; order: 5; display: flex; height: 100%; flex-direction: column;">
             <div id="gitDisplay"></div>
             <div id="dataDisplay"></div>
             <div id="contactDisplay"></div>
@@ -116,9 +119,36 @@
         </div>
       </section>
       <section id="sec3">
-        <h1 class="trns-text">
+        <h1 class="trns-text noselect" style="max-width: none; max-height: 30%;">
           DEMO<br>PAGE
         </h1>
+
+        <div style="display: flex; flex-direction: row; width: 100%;">
+          <div style="flex:1 100%; padding: 25px;">
+            <div style="width: 100%; height: 300px; padding: 5px;">
+              <div style="margin: auto; position:relative; height: 300px; width: 300px; background-color: rgb(255, 255, 255); border-style: inset;">
+                
+              </div>
+            </div>
+            <p style="text-align: center;">Buoy simulation</p>
+          </div>
+          <div style="flex:1 100%; padding: 25px;">
+            <div style="width: 100%; height: 300px; padding: 5px;">
+              <div style="margin: auto; position:relative; height: 300px; width: 300px; background-color: rgb(255, 255, 255); border-style: inset;">
+
+              </div>
+            </div>
+            <p style="text-align: center;">Chess</p>
+          </div>
+          <div style="flex:1 100%; padding: 25px;">
+            <div style="width: 100%; height: 300px; padding: 5px;">
+              <div style="margin: auto; position:relative; height: 300px; width: 300px; background-color: rgb(255, 255, 255); border-style: inset;">
+
+              </div>
+            </div>
+            <p style="text-align: center;">Visual representation</p>
+          </div>
+        </div>
       </section>
     </main>
   <script src="github.js"></script>
