@@ -224,3 +224,71 @@ section:nth-child(2) {
     -webkit-text-stroke-color: black;
     text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.74);
 }
+
+.carouselUp {
+    margin: 0 auto;
+    padding: 20px 0;
+    max-width: 700px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+    > * {
+        flex: 0 0 100%;
+    }
+}
+
+.carouselDown {
+    margin: 0 auto;
+    padding: 20px 0;
+    max-width: 700px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column-reverse;
+
+    > * {
+        flex: 0 0 100%;
+    }
+}
+
+.groupUp {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 20px;
+    will-change: transform;
+    animation: scrollingUp 15s linear infinite;
+}
+
+.groupDown {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 20px;
+    will-change: transform;
+    animation: scrollingDown 15s linear infinite;
+}
+
+.card {
+    width: 100%;
+    padding: 20px;
+    justify-content: center;
+    min-height: 200px;
+}
+
+@keyframes scrollingUp {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+@keyframes scrollingDown {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
