@@ -112,17 +112,22 @@ section:nth-child(1) {
     height: 200px;
 }
 
-.navbutton a:hover {
+.projcol a:hover {
     transition-duration: 500ms;
-    background-color: white;
+    background-color: rgb(42, 159, 167);
+}
+
+.democol a:hover {
+    transition-duration: 500ms;
+    background-color: rgb(238, 176, 94);
 }
 
 .projcol a {
-    background-color: cadetblue
+    background-color: rgb(95, 158, 160);
 }
 
 .democol a {
-    background-color: burlywood;
+    background-color: rgb(222, 184, 135);
 }
 
 .navbutton a span {
