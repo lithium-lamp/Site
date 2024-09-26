@@ -101,7 +101,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             const linkElement = document.createElement("a");
             linkElement.textContent = data.email;
-            linkElement.href = data.email;
+            linkElement.href = "mailto: " + data.email;
 
             divElement.appendChild(labelElement);
             divElement.appendChild(linkElement);
