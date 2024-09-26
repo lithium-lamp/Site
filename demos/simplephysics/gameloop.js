@@ -89,7 +89,7 @@ function gameLoop(timeStamp) {
         balls.forEach((ball) => {
             ball.step(fps, dx, dy, vx, vy);    
         });
-    }
+
 
     /*
 
@@ -107,7 +107,8 @@ function gameLoop(timeStamp) {
         
     });
     */
-    draw();
+        draw();
+    }
 
     window.requestAnimationFrame(gameLoop);
 }
