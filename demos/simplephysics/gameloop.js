@@ -72,6 +72,7 @@ function init(){
         running = false;
     });
 
+    draw();
     window.requestAnimationFrame(gameLoop);
 }
 
