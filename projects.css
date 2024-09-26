@@ -1,6 +1,11 @@
 section:nth-child(2) {
+    background-color: #5f9ea0;
+    background-image:  radial-gradient(#e0e0e0 0.30000000000000004px, transparent 0.30000000000000004px), radial-gradient(#e0e0e0 0.30000000000000004px, #5f9ea0 0.30000000000000004px);
+    background-size: 12px 12px;
+    background-position: 0 0,6px 6px;
+
+
     display: block;
-    background-color: cadetblue;
     overflow: hidden;
 }
 

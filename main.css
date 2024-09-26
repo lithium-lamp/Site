@@ -1,5 +1,10 @@
 section:nth-child(1) {
-    background-color: tomato;
+    background-color: #ff6347;
+    background-image:  linear-gradient(#e0e0e0 2px, transparent 2px), linear-gradient(to right, #e0e0e0 2px, #ff6347 2px);
+    background-size: 90% 90%;
+    background-repeat: repeat;
+    background-position: center;
+
     display: flex;
     flex-direction: column;
     padding: 100px;
@@ -28,6 +33,7 @@ section:nth-child(1) {
     transition: all 0.3s ease;
     cursor: pointer;
     text-decoration: none;
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.8);
 }
 
 .status:hover {
