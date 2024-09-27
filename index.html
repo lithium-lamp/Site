@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./main.css">
     <link rel="stylesheet" href="./projects.css">
+    <link rel="stylesheet" href="./demo.css">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
   </head>
   <body>
@@ -55,7 +56,6 @@
             </div>
           </div>
         </div>
-
         <div style="display: flex; flex-direction: row; width: 100%; height: 50%">
           <div class="navbutton projcol">
             <a href="#sec2">
@@ -68,7 +68,6 @@
             </a>
           </div>
         </div>
-
       </section>
       <section id="sec2">
         <div class="overlap">
@@ -113,7 +112,6 @@
             </div>
           </div>
           <div id="projcol2" style="flex: 1 150%; order: 3;">
-            
             <div class="carouselUp">
               <div class="groupUp">
                 <div class="card">
@@ -151,8 +149,6 @@
                 </div>
               </div>
             </div>
-            
-            
           </div>
           <div style="flex: 2 200%; order: 4; display: flex; height: 100%; flex-direction: column; z-index: 3">
             <div id="gitDisplay"></div>
@@ -166,32 +162,32 @@
           DEMOS
         </h1>
 
-        <div style="display: flex; flex-direction: row; width: 100%;">
+        <div style="display: flex; flex-direction: row; width: 100%; background-color: burlywood;">
           <div style="flex:1 100%; padding: 25px;">
-            <div style="width: 100%; height: 300px; padding: 5px;">
-              <div style="margin: auto; position:relative; height: 300px; width: 300px; background-color: rgb(0, 0, 0); border-style: inset;">
-                
-              </div>
-            </div>
-            <p style="text-align: center;">Buoy simulation, not implemented</p>
-          </div>
-          <div style="flex:1 100%; padding: 25px;">
-            <div style="width: 100%; height: 300px; padding: 5px;">
-              <div style="margin: auto; position:relative; height: 300px; width: 300px; background-color: rgb(0, 0, 0); border-style: inset;">
-
-              </div>
-            </div>
-            <p style="text-align: center;">Chess, not implemented</p>
-          </div>
-          <div style="flex:1 100%; padding: 25px; text-align: center;">
-            <div style="width: 100%; height: 300px; padding: 5px;">
-              <canvas style="background-color: rgb(255, 255, 255);" width="300px" height="300px" id="demo3">
+            <div class="democontainer">
+              <canvas width="300px" height="300px" id="demo1">
 
               </canvas>
+              <p style="text-align: center;">Buoy simulation, not implemented</p>
             </div>
-            <p style="text-align: center;">Visual representation, hover to run.<br>
-            Select/drop one or more circles by clicking.<br>
-            The "blocks" are meant to represent springs and will function as such soon.</p>
+          </div>
+          <div style="flex:1 100%; padding: 25px;">
+            <div class="democontainer">
+              <canvas width="300px" height="300px" id="demo2">
+
+              </canvas>
+              <p style="text-align: center;">Chess, not implemented</p>
+            </div>
+          </div>
+          <div style="flex:1 100%; padding: 25px; text-align: center;">
+            <div class="democontainer">
+              <canvas width="300px" height="300px" id="demo3">
+
+              </canvas>
+              <p style="text-align: center;">Visual representation, hover to run.<br>
+                Select/drop one or more circles by clicking.<br>
+                The "blocks" are meant to represent springs and will function as such soon.</p>
+            </div>
           </div>
         </div>
       </section>

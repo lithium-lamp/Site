@@ -10,14 +10,20 @@ class Ball extends Object {
     step(fps, dx, dy, vx, vy) {
       if (this.pos_y - this.radius > 0) {
         this.vel_y -= this.gravity * 1/(fps);
-        
       }
       else if (this.pos_y - this.radius <= 0) {
-        this.vel_y = Math.abs(this.bounce * this.vel_y); 
+        this.pos_y = this.radius;
+        this.vel_y = Math.abs(this.bounce * this.vel_y);
       }
 
-      this.pos_x += this.vel_x;
-      this.pos_y += this.vel_y;
+      if (this.pos_y - this.radius <= 0.1 && this.vel_y < 0.01) {
+        this.vel_y = 0;
+        this.pos_y = this.radius;
+      }
+      else {
+        this.pos_x += this.vel_x;
+        this.pos_y += this.vel_y;
+      }
 
       return {
         dx: this.pos_x,

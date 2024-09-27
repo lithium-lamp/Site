@@ -1,0 +1,21 @@
+section:nth-child(3) {
+    background-color: #deb887;
+    opacity: 1;
+    background-size: 16px 16px;
+    background-position: center;
+    background-image:  repeating-linear-gradient(to right, #e0e0e0, #e0e0e0 1.8px, #deb887 1.8px, #deb887);
+}
+
+.democontainer {
+    width: 300px;
+    padding: 10px;
+    margin: auto;
+    background-color: rgb(244, 244, 244);
+    border-radius: 10px;
+    box-shadow: 0px 2px 1px dimgrey;
+}
+
+.democontainer canvas {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 1px dimgrey;
+}
