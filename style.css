@@ -32,7 +32,7 @@ body {
         left: 0;
         width: 100vw;
         height: 100vh;
-        background-color: rgba(165, 42, 114, 0.788);
+        background-color: rgba(184, 184, 184, 0.788);
     }
 }
 
@@ -47,9 +47,4 @@ section {
     scroll-snap-align: start;
 }
 
-section:nth-child(4) {
-    background: red;
-}
-section:nth-child(5) {
-    background: yellow;
-}
+
