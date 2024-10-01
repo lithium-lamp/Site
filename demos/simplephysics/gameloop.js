@@ -3,7 +3,9 @@ let canvas;
 let context;
 
 let running = false;
-window.onload = init;
+//window.onload = init;
+
+window.addEventListener('load', init);
 
 let dx = 0;
 let dy = 0;
