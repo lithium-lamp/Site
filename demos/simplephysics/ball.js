@@ -1,4 +1,4 @@
-class Ball extends Object {
+class Ball extends GameObject {
     constructor(pos_x, pos_y, radius, bounce, color) {
       super(pos_x, pos_y, 0.1, color, 5, 9.82, "ball");
 

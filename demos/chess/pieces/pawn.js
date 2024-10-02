@@ -1,6 +1,6 @@
 class Pawn extends Piece {
-    constructor(hor_index, ver_index, isWhite, doubleStepped) {
-      super(hor_index, ver_index, "pawn", isWhite);
+    constructor(hor_index, ver_index, isWhite, doubleStepped, key) {
+      super(hor_index, ver_index, "pawn", isWhite, key);
       
       this.doubleStepped = doubleStepped;
     }
@@ -35,6 +35,12 @@ class Pawn extends Piece {
         context2.fillStyle = '#ffffff';
 
         context2.fillText('P', this.hor_index * 30 + 45, 300 - this.ver_index * 30 - 38.5);
+      }
+
+      if (this.selected) {
+        context2.strokeStyle = "#ff0000";
+
+        context2.stroke();
       }
     }
 };

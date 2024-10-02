@@ -1,4 +1,5 @@
 "use strict";
+
 let canvas;
 let context;
 

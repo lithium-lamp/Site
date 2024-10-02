@@ -1,6 +1,6 @@
 class Knight extends Piece {
-    constructor(hor_index, ver_index, isWhite) {
-      super(hor_index, ver_index, "knight", isWhite);
+    constructor(hor_index, ver_index, isWhite, key) {
+      super(hor_index, ver_index, "knight", isWhite, key);
     }
 
     draw2(context2) {
@@ -33,6 +33,12 @@ class Knight extends Piece {
         context2.fillStyle = '#ffffff';
 
         context2.fillText('Kn', this.hor_index * 30 + 45, 300 - this.ver_index * 30 - 38.5);
+      }
+
+      if (this.selected) {
+        context2.strokeStyle = "#ff0000";
+
+        context2.stroke();
       }
     }
 };

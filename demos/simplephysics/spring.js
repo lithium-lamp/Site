@@ -1,4 +1,4 @@
-class Spring extends Object {
+class Spring extends GameObject {
   constructor(pos_x, pos_y, width, height, k, color) {
     super(pos_x, pos_y, 0.1, color, 5, 9.82, "spring");
 

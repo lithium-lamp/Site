@@ -1,4 +1,4 @@
-class Object {
+class GameObject {
     constructor(pos_x, pos_y, mass, color, scalefactor, gravity, classname) {
       this.pos_x = pos_x;
       this.pos_y = pos_y;

@@ -1,4 +1,5 @@
 "use strict";
+
 let canvas2;
 let context2;
 
@@ -13,39 +14,39 @@ let wr1, wk1, wb1, wq, wk, wb2, wk2, wr2,
 let br1, bk1, bb1, bq, bk, bb2, bk2, br2,
     bp1, bp2, bp3, bp4, bp5, bp6, bp7, bp8;
 
-    wr1 = new Rook(0, 0, true, false);
-    wk1 = new Knight(1, 0, true);
-    wb1 = new Bishop(2, 0, true);
-    wq = new Queen(3, 0, true);
-    wk = new King(4, 0, true, false);
-    wb2 = new Bishop(5, 0, true);
-    wk2 = new Knight(6, 0, true);
-    wr2 = new Rook(7, 0, true, false);
-    wp1 = new Pawn(0, 1, true, false);
-    wp2 = new Pawn(1, 1, true, false);
-    wp3 = new Pawn(2, 1, true, false);
-    wp4 = new Pawn(3, 1, true, false);
-    wp5 = new Pawn(4, 1, true, false);
-    wp6 = new Pawn(5, 1, true, false);
-    wp7 = new Pawn(6, 1, true, false);
-    wp8 = new Pawn(7, 1, true, false);
+    wr1 = new Rook(0, 0, true, false, 0);
+    wk1 = new Knight(1, 0, true, 1);
+    wb1 = new Bishop(2, 0, true, 2);
+    wq = new Queen(3, 0, true, 3);
+    wk = new King(4, 0, true, false, 4);
+    wb2 = new Bishop(5, 0, true, 5);
+    wk2 = new Knight(6, 0, true, 6);
+    wr2 = new Rook(7, 0, true, false, 7);
+    wp1 = new Pawn(0, 1, true, false, 8);
+    wp2 = new Pawn(1, 1, true, false, 9);
+    wp3 = new Pawn(2, 1, true, false, 10);
+    wp4 = new Pawn(3, 1, true, false, 11);
+    wp5 = new Pawn(4, 1, true, false, 12);
+    wp6 = new Pawn(5, 1, true, false, 13);
+    wp7 = new Pawn(6, 1, true, false, 14);
+    wp8 = new Pawn(7, 1, true, false, 15);
 
-    br1 = new Rook(0, 7, false, false);
-    bk1 = new Knight(1, 7, false);
-    bb1 = new Bishop(2, 7, false);
-    bq = new Queen(3, 7, false);
-    bk = new King(4, 7, false, false);
-    bb2 = new Bishop(5, 7, false);
-    bk2 = new Knight(6, 7, false);
-    br2 = new Rook(7, 7, false, false);
-    bp1 = new Pawn(0, 6, false, false);
-    bp2 = new Pawn(1, 6, false, false);
-    bp3 = new Pawn(2, 6, false, false);
-    bp4 = new Pawn(3, 6, false, false);
-    bp5 = new Pawn(4, 6, false, false);
-    bp6 = new Pawn(5, 6, false, false);
-    bp7 = new Pawn(6, 6, false, false);
-    bp8 = new Pawn(7, 6, false, false);
+    br1 = new Rook(0, 7, false, false, 16);
+    bk1 = new Knight(1, 7, false, 17);
+    bb1 = new Bishop(2, 7, false, 18);
+    bq = new Queen(3, 7, false, 19);
+    bk = new King(4, 7, false, false, 20);
+    bb2 = new Bishop(5, 7, false, 21);
+    bk2 = new Knight(6, 7, false, 22);
+    br2 = new Rook(7, 7, false, false, 23);
+    bp1 = new Pawn(0, 6, false, false, 24);
+    bp2 = new Pawn(1, 6, false, false, 25);
+    bp3 = new Pawn(2, 6, false, false, 26);
+    bp4 = new Pawn(3, 6, false, false, 27);
+    bp5 = new Pawn(4, 6, false, false, 28);
+    bp6 = new Pawn(5, 6, false, false, 29);
+    bp7 = new Pawn(6, 6, false, false, 30);
+    bp8 = new Pawn(7, 6, false, false, 31);
 
 let whitepieces = [
     wr1, wk1, wb1, wq, wk, wb2, wk2, wr2,
@@ -56,12 +57,57 @@ let blackpieces = [
     bp1, bp2, bp3, bp4, bp5, bp6, bp7, bp8 
 ];
 
+let selectedkey = -1;
+
 function init2(){
     canvas2 = document.getElementById('demo2');
     context2 = canvas2.getContext('2d');
 
     canvas2.addEventListener('mousedown', function(event) {
+        let xpos = Math.round((event.offsetX + 45) / 30) - 3;
+        let ypos = Math.round((300 - 45 - event.offsetY) / 30);
 
+        if (selectedkey == -1) {
+            whitepieces.forEach((piece) => {
+                if (xpos < piece.hor_index || xpos > piece.hor_index) {
+                    return;
+                }
+    
+                if (ypos < piece.ver_index || ypos > piece.ver_index) {
+                    return;
+                }
+    
+                piece.selected = true;
+                selectedkey = piece.key;
+            });
+    
+            blackpieces.forEach((piece) => {
+                if (xpos < piece.hor_index || xpos > piece.hor_index) {
+                    return;
+                }
+    
+                if (ypos < piece.ver_index || ypos > piece.ver_index) {
+                    return;
+                }
+    
+                piece.selected = true;
+                selectedkey = piece.key;
+            });
+        }
+        else if (selectedkey < 16) {
+            whitepieces[selectedkey].hor_index = xpos;
+            whitepieces[selectedkey].ver_index = ypos;
+            whitepieces[selectedkey].selected = false;
+
+            selectedkey = -1;
+        }
+        else {
+            blackpieces[selectedkey - 16].hor_index = xpos;
+            blackpieces[selectedkey - 16].ver_index = ypos;
+            blackpieces[selectedkey - 16].selected = false;
+
+            selectedkey = -1;
+        }
     });
     
     draw2();

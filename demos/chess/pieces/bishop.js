@@ -1,6 +1,6 @@
 class Bishop extends Piece {
-    constructor(hor_index, ver_index, isWhite) {
-      super(hor_index, ver_index, "bishop", isWhite);
+    constructor(hor_index, ver_index, isWhite, key) {
+      super(hor_index, ver_index, "bishop", isWhite, key);
       
     }
 
@@ -35,6 +35,12 @@ class Bishop extends Piece {
         context2.fillStyle = '#ffffff';
 
         context2.fillText('B', this.hor_index * 30 + 45, 300 - this.ver_index * 30 - 38.5);
+      }
+
+      if (this.selected) {
+        context2.strokeStyle = "#ff0000";
+
+        context2.stroke();
       }
 
     }
