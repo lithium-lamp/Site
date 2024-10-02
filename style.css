@@ -19,7 +19,8 @@ body {
     display: none;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1200px),
+    screen and (max-height: 650px)  {
     main:not(#popup) {
         display: none;
     }
