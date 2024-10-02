@@ -3,7 +3,8 @@ section:nth-child(3) {
     opacity: 1;
     background-size: 16px 16px;
     background-position: center;
-    background-image:  repeating-linear-gradient(to right, #e0e0e0, #e0e0e0 1.8px, #deb887 1.8px, #deb887);
+    background-image:  repeating-linear-gradient(to right, #f0ca98, #f0ca98 1.8px, #deb887 1.8px, #deb887);
+    overflow: hidden;
 }
 
 .democontainer {

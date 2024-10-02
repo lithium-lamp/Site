@@ -4,6 +4,7 @@ section:nth-child(5) {
     opacity: 1;
     background-image:
     repeating-radial-gradient(circle at 75% 50%, transparent 88%, rgb(199, 162, 192));
+    overflow: hidden;
 }
 
 #heartcontainer {
