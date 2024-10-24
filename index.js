@@ -116,3 +116,8 @@ document.addEventListener("DOMContentLoaded", function () {
     })
     .catch(error => console.error("Error fetching JSON data:", error));
 });
+
+function scrollSmoothTo(elementId) {
+    var element = document.getElementById(elementId);
+    element.scrollIntoView({ block: 'start',  behavior: 'smooth' });
+}

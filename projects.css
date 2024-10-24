@@ -75,6 +75,9 @@ section:nth-child(2) {
 #gitDisplay {
     width: -webkit-fill-available;
     margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
 }
 
 #gitDisplay a {
@@ -94,6 +97,7 @@ section:nth-child(2) {
     cursor: pointer;
     text-decoration: none;
     border: 1px solid #bbbbbb;
+    width: 16%;
 }
 
 .profile-button:hover {

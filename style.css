@@ -19,6 +19,10 @@ body {
     display: none;
 }
 
+#popup p {
+    font-size: 34px;
+}
+
 @media screen and (max-width: 1200px),
     screen and (max-height: 650px)  {
     main:not(#popup) {
@@ -33,7 +37,7 @@ body {
         left: 0;
         width: 100vw;
         height: 100vh;
-        background-color: rgba(184, 184, 184, 0.788);
+        background-color: rgb(255, 255, 255);
     }
 }
 

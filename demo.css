@@ -3,21 +3,35 @@ section:nth-child(3) {
     opacity: 1;
     background-size: 16px 16px;
     background-position: center;
-    background-image:  repeating-linear-gradient(to right, #f0ca98, #f0ca98 1.8px, #deb887 1.8px, #deb887);
+    background-image:  repeating-linear-gradient(to right, #f0ca98, #f0ca98 0.5px, #deb887 100px, #deb887);
     overflow: hidden;
 }
 
 .democontainer {
     width: 300px;
     padding: 10px;
-    margin: auto;
+    margin: 5px;
     background-color: rgb(244, 244, 244);
     border-radius: 10px;
     box-shadow: 0px 2px 1px dimgrey;
-    height: 400px;
 }
 
 .democontainer canvas {
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 0px 1px dimgrey;
+}
+
+.demotextbox {
+    width: 300px;
+    background-color: white;
+    height: 100px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 1px dimgrey;
+    align-content: center;
+    margin: auto;
+    display: none;
+}
+
+.democontainer:hover + .demotextbox {
+    display: grid;
 }
