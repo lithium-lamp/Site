@@ -28,6 +28,7 @@ section:nth-child(2) {
     padding: 1rem 1rem;
     vertical-align: middle;
     overflow-y: scroll;
+    box-shadow: 0 2px 1px rgba(0,0,0,0.8);
 }
 
 #videoDisplay h3 {
@@ -84,6 +85,7 @@ section:nth-child(2) {
     border: 1px solid #ddd;
     border-radius: 8px;
     width: -webkit-fill-available;
+    box-shadow: 0 2px 1px rgba(0,0,0,0.8);
 }
 
 .profile-button {
@@ -97,7 +99,7 @@ section:nth-child(2) {
     cursor: pointer;
     text-decoration: none;
     border: 1px solid #bbbbbb;
-    width: 16%;
+    width: 12%;
 }
 
 .profile-button:hover {
@@ -135,6 +137,7 @@ section:nth-child(2) {
     vertical-align: middle;
     overflow-y: scroll;
     flex: 2;
+    box-shadow: 0 2px 1px rgba(0,0,0,0.8);
 }
 
 #dataDisplay h3 {
@@ -181,7 +184,7 @@ section:nth-child(2) {
     display: inline-block;
     padding: 1rem 1rem;
     vertical-align: middle;
-    flex: 1;
+    box-shadow: 0 2px 1px rgba(0,0,0,0.8);
 }
 
 #contactDisplay h3 {

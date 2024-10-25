@@ -23,6 +23,7 @@ body {
     font-size: 34px;
 }
 
+/*
 @media screen and (max-width: 1200px),
     screen and (max-height: 650px)  {
     main:not(#popup) {
@@ -40,6 +41,7 @@ body {
         background-color: rgb(255, 255, 255);
     }
 }
+*/
 
 main {
     text-align: left;
@@ -51,5 +53,3 @@ section {
     padding: 25px;
     scroll-snap-align: start;
 }
-
-
