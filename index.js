@@ -121,3 +121,29 @@ function scrollSmoothTo(elementId) {
     var element = document.getElementById(elementId);
     element.scrollIntoView({ block: 'start',  behavior: 'smooth' });
 }
+
+function hasClass(element, className) {
+    return (' ' + element.className + ' ').indexOf(' ' + className+ ' ') > -1;
+}
+
+function setFocus(val) {
+    var element = document.getElementById ("carouselbox3d");
+
+    /*
+    if (hasClass(element, 'running')) {
+        element.classList.remove('running');
+        element.classList.add('paused');
+    }
+    */
+
+    classes = ['location1', 'location2', 'location3', 'location4', 'location5'];
+
+    for(var i = 0, j = classes.length; i < j; i++) {
+        if(hasClass(element, classes[i])) {
+            element.classList.remove(classes[i]);
+            break;
+        }
+    }
+
+    element.classList.add("location" + String(val));
+}

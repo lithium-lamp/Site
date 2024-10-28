@@ -11,9 +11,9 @@ section:nth-child(3) {
     width: 300px;
     padding: 10px;
     margin: 5px;
-    background-color: rgb(244, 244, 244);
+    /* background-color: rgb(244, 244, 244);
     border-radius: 10px;
-    box-shadow: 0px 2px 1px dimgrey;
+    box-shadow: 0px 2px 1px dimgrey; */
 }
 
 .democontainer canvas {

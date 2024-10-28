@@ -1,4 +1,4 @@
-
+/*
 
 async function getData() {
     const response = await fetch("https://api.github.com/users/lithium-lamp");
@@ -32,3 +32,4 @@ document.addEventListener("DOMContentLoaded", function () {
     })
     .catch(error => console.error("Error fetching JSON data:", error));
 });
+*/

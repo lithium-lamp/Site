@@ -195,74 +195,94 @@
             </div>
           </div>
           <div style="flex: 2 200%; order: 4; display: flex; height: 100%; flex-direction: column; z-index: 3">
-            <div id="gitDisplay"></div>
+            <!--<div id="gitDisplay"></div>-->
             <div id="dataDisplay"></div>
             <div id="contactDisplay"></div>
           </div>
         </div>
       </section>
       <section id="sec3">
-        <h1 class="trns-text noselect" style="max-width: none; height: 30px;">
+        <h1 class="trns-text noselect" style="height: 30px; max-width: none;">
           DEMOS
         </h1>
 
-        <div style="display: flex; flex-direction: row; width: 100%; justify-content: center;">
-          <div>
-            <div class="democontainer">
-              <canvas width="300px" height="300px" id="demo1">
-
-              </canvas>
-              
-            </div>
-            <div class="demotextbox">
-              <p style="text-align: center;">Buoy simulation, not implemented</p>
-            </div>
-          </div>
-          <div>
-            <div class="democontainer">
-              <canvas width="300px" height="300px" id="demo2">
-
-              </canvas>
-              
-            </div>
-            <div class="demotextbox">
-              <p style="text-align: center;">Chess, partially implemented. Should be hooked up to chess api.</p>
+        <div id="carouselbox3d" class="carouselbox3d paused location3">
+          <span style="--i: 1"  onclick="setFocus(1)">
+            
+            <div>
+              <div class="democontainer">
+                <canvas width="300px" height="300px" id="demo1">
+  
+                </canvas>
+                
               </div>
-          </div>
-          <div>
-            <div class="democontainer">
-              <canvas width="300px" height="300px" id="demo3">
-
-              </canvas>
-              
-            </div>
-            <div class="demotextbox">
-              <p style="text-align: center;">Select/drop one or more circles by clicking.<br>
-                The "blocks" are meant to represent springs and will function as such soon.</p>
+              <div class="demotextbox">
+                <p style="text-align: center;">Not implemented</p>
               </div>
-          </div>
-          <div>
-            <div class="democontainer">
-              <canvas width="300px" height="300px" id="demo4">
+            </div>
 
-              </canvas>
-              
+          </span>
+          <span style="--i: 2"  onclick="setFocus(2)">
+            
+            <div>
+              <div class="democontainer">
+                <canvas width="300px" height="300px" id="demo2">
+  
+                </canvas>
+                
+              </div>
+              <div class="demotextbox">
+                <p style="text-align: center;">Chess, partially implemented. Should be hooked up to chess api.</p>
+              </div>
             </div>
-            <div class="demotextbox">
-              <p style="text-align: center;">Some simulation, not implemented</p>
-            </div>
-          </div>
-          <div>
-            <div class="democontainer">
-              <canvas width="300px" height="300px" id="demo5">
 
-              </canvas>
-              
+          </span>
+          <span style="--i: 3"  onclick="setFocus(3)">
+            
+            <div>
+              <div class="democontainer">
+                <canvas width="300px" height="300px" id="demo3">
+  
+                </canvas>
+                
+              </div>
+              <div class="demotextbox">
+                <p style="text-align: center;">Select/drop one or more circles by clicking.<br>
+                  The "blocks" are meant to represent springs and will function as such soon.</p>
+                </div>
             </div>
-            <div class="demotextbox">
-              <p style="text-align: center;">Some simulation, not implemented</p>
+
+          </span>
+          <span style="--i: 4" onclick="setFocus(4)">
+            
+            <div>
+              <div class="democontainer">
+                <canvas width="300px" height="300px" id="demo4">
+  
+                </canvas>
+                
+              </div>
+              <div class="demotextbox">
+                <p style="text-align: center;">Not implemented.</p>
+                </div>
             </div>
-          </div>
+
+          </span>
+          <span style="--i: 5" onclick="setFocus(5)">
+            
+            <div>
+              <div class="democontainer">
+                <canvas width="300px" height="300px" id="demo5">
+  
+                </canvas>
+                
+              </div>
+              <div class="demotextbox">
+                <p style="text-align: center;">Not implemented.</p>
+            </div>
+            </div>
+
+          </span>
         </div>
       </section>
       <section id="sec4">
