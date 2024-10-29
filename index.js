@@ -147,3 +147,23 @@ function setFocus(val) {
 
     element.classList.add("location" + String(val));
 }
+
+function pauseScroll() {
+    var element = document.getElementById ("carouselbox3d");
+
+    if (hasClass(element, 'running')) {
+        element.classList.remove('running');
+    }
+
+    element.classList.add("paused")
+}
+
+function startScroll() {
+    var element = document.getElementById ("carouselbox3d");
+
+    if (hasClass(element, 'paused')) {
+        element.classList.remove('paused');
+    }
+
+    element.classList.add("running")
+}

@@ -1,9 +1,9 @@
 section:nth-child(3) {
-    background-color: #deb887;
+    background-color: #f9d3a3;
     opacity: 1;
     background-size: 16px 16px;
     background-position: center;
-    background-image:  repeating-linear-gradient(to right, #f0ca98, #f0ca98 0.5px, #deb887 100px, #deb887);
+    background-image:  repeating-linear-gradient(to right, #f9d3a3, #e9c69a 100px, #a28868 250px, #fff);
     overflow: hidden;
 }
 
@@ -18,7 +18,8 @@ section:nth-child(3) {
 
 .democontainer canvas {
     background-color: rgb(255, 255, 255);
-    box-shadow: 0px 0px 1px dimgrey;
+    /*box-shadow: 0px 0px 1px dimgrey;*/
+    border-radius: 5px;
 }
 
 .demotextbox {
@@ -30,6 +31,9 @@ section:nth-child(3) {
     align-content: center;
     margin: auto;
     display: none;
+    top: -230px;
+    position: relative;
+    right: -350px;
 }
 
 .democontainer:hover + .demotextbox {

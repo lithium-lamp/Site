@@ -31,6 +31,7 @@ function init(){
     context = canvas.getContext('2d');
 
     canvas.addEventListener('mousedown', function(event) {
+
         let xpos = event.offsetX;
         let ypos = 300 - event.offsetY;
 

@@ -28,7 +28,7 @@
       <section id="sec1">
           <div style="display: flex; flex-direction: row; width: 100%; height: 50%">
             <div style="flex:1 50%;">
-              <h1 style="max-width: none; text-align: left;" class="trns-text noselect">
+              <h1 style="max-width: none; text-align: left; text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.74);" class="trns-text noselect">
                 VICTOR<br>LINDHOLM
               </h1>
             </div>
@@ -113,7 +113,9 @@
             </div>
           </div>
       </section>
-      <section id="sec2">
+      <section id="sec2" style="padding: 0; height: 220vh;">
+
+      <div style="position: relative; height: 100vh; width: 100vw; padding: 25px; box-sizing: border-box; overflow: hidden; scroll-snap-align: start;">
         <div class="overlap">
             <div style="flex: 2 200%; order: 1; z-index: 3" id="videoDisplay"></div>
           <div id="projcol1" style="flex: 1 150%; order: 2;">
@@ -200,14 +202,112 @@
             <div id="contactDisplay"></div>
           </div>
         </div>
+      </div>
+      
+      <div style="position: relative; height: 20vh; width: 100vw; padding: 0; background-color: #5f9ea0; box-sizing: border-box; z-index: 5;">
+      </div>
+
+      <div style="position: relative; height: 100vh; width: 100vw; padding: 25px; box-sizing: border-box; scroll-snap-align: start; overflow: hidden">
+        
+        <div class="overlap">
+          <div style="flex: 2 200%; order: 1; z-index: 3">
+
+          </div>
+
+          <div  style="flex: 1 150%; order: 2;">
+            <div class="carouselDown">
+              <div class="groupDown">
+                <div class="card">
+                  <h1 class="trns-text noselect">
+                    PRO
+                  </h1>
+                </div>
+                <div class="card">
+                  <h1 class="trns-text noselect">
+                    JEC
+                  </h1>
+                </div>
+                <div class="card">
+                  <h1 class="trns-text noselect">
+                    TS...
+                  </h1>
+                </div>
+              </div>
+              <!-- Add `aria-hidden` to hide the duplicated cards from screen readers. -->
+              <div aria-hidden class="groupDown">
+                <div class="card">
+                  <h1 class="trns-text noselect">
+                    PRO
+                  </h1>
+                </div>
+                <div class="card">
+                  <h1 class="trns-text noselect">
+                    JEC
+                  </h1>
+                </div>
+                <div class="card">
+                  <h1 class="trns-text noselect">
+                    TS...
+                  </h1>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div  style="flex: 1 150%; order: 3;">
+            <div class="carouselUp">
+              <div class="groupUp">
+                <div class="card">
+                  <h1 class="trns-text noselect">
+                    PRO
+                  </h1>
+                </div>
+                <div class="card">
+                  <h1 class="trns-text noselect">
+                    JEC
+                  </h1>
+                </div>
+                <div class="card">
+                  <h1 class="trns-text noselect">
+                    TS...
+                  </h1>
+                </div>
+              </div>
+              <!-- Add `aria-hidden` to hide the duplicated cards from screen readers. -->
+              <div aria-hidden class="groupUp">
+                <div class="card">
+                  <h1 class="trns-text noselect">
+                    PRO
+                  </h1>
+                </div>
+                <div class="card">
+                  <h1 class="trns-text noselect">
+                    JEC
+                  </h1>
+                </div>
+                <div class="card">
+                  <h1 class="trns-text noselect">
+                    TS...
+                  </h1>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div style="flex: 2 200%; order: 4; display: flex; height: 100%; flex-direction: column; z-index: 3">
+            
+          </div>
+
+        </div>
+      </div>
+
       </section>
       <section id="sec3">
-        <h1 class="trns-text noselect" style="height: 30px; max-width: none;">
+        <h1 class="trns-text noselect" style="height: 30px; position: relative; top: 50px; left: 50px">
           DEMOS
         </h1>
 
-        <div id="carouselbox3d" class="carouselbox3d paused location3">
-          <span style="--i: 1"  onclick="setFocus(1)">
+        <div id="carouselbox3d" class="carouselbox3d running default">
+          <span style="--i: 1"  onclick="setFocus(1); pauseScroll()">
             
             <div>
               <div class="democontainer">
@@ -222,7 +322,7 @@
             </div>
 
           </span>
-          <span style="--i: 2"  onclick="setFocus(2)">
+          <span style="--i: 2"  onclick="setFocus(2); pauseScroll()">
             
             <div>
               <div class="democontainer">
@@ -237,7 +337,7 @@
             </div>
 
           </span>
-          <span style="--i: 3"  onclick="setFocus(3)">
+          <span style="--i: 3"  onclick="setFocus(3); pauseScroll()">
             
             <div>
               <div class="democontainer">
@@ -253,7 +353,7 @@
             </div>
 
           </span>
-          <span style="--i: 4" onclick="setFocus(4)">
+          <span style="--i: 4" onclick="setFocus(4); pauseScroll()">
             
             <div>
               <div class="democontainer">
@@ -268,7 +368,7 @@
             </div>
 
           </span>
-          <span style="--i: 5" onclick="setFocus(5)">
+          <span style="--i: 5" onclick="setFocus(5); pauseScroll()">
             
             <div>
               <div class="democontainer">
