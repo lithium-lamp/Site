@@ -158,6 +158,8 @@ function drawBoard(){
             instantStart = 1;
     }
 
+    /*
+
     for (var x = 0; x <= bw; x += 240/8) {
         context2.moveTo(0.5 + x + p, p);
         context2.lineTo(0.5 + x + p, bh + p);
@@ -171,6 +173,7 @@ function drawBoard(){
 
     context2.strokeStyle = "black";
     context2.stroke();
+    */
 }
 
 function draw2(){

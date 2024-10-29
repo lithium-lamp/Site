@@ -10,7 +10,9 @@ class Spring extends GameObject {
   draw(context) {
     context.fillStyle = this.color;
     context.fillRect(this.pos_x - (this.width)/2, 300 - this.pos_y - (this.height)/2, this.width, this.height);
+    /*
     context.strokeStyle = "black";
     context.strokeRect(this.pos_x - (this.width)/2, 300 - this.pos_y - (this.height)/2, this.width, this.height);
+    */
   }
 };

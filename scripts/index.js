@@ -146,6 +146,10 @@ function setFocus(val) {
     }
 
     element.classList.add("location" + String(val));
+
+    element.style.animation = 'none';
+    element.offsetHeight; /* trigger reflow */
+    element.style.animation = null; 
 }
 
 function pauseScroll() {
@@ -166,4 +170,12 @@ function startScroll() {
     }
 
     element.classList.add("running")
+}
+
+function toggleScroll(checkbox) {
+    if (checkbox.checked) {
+        pauseScroll();
+    } else {
+        startScroll();
+    }
 }

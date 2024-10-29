@@ -4,41 +4,38 @@ class Knight extends Piece {
     }
 
     draw2(context2) {
-      context2.beginPath();
-
-      context2.arc(this.hor_index * 30 + 45, 300 - this.ver_index * 30 - 45, 15, 0, 2 * Math.PI);
-
-      if (this.isWhite) {
-        context2.fillStyle = "#ffffff";
-        context2.strokeStyle = "#000000";
-        
-        context2.fill();
-        context2.stroke();
-
-        context2.font = 'bold 14pt Calibri';
-        context2.textAlign = 'center';
-        context2.fillStyle = '#000000';
-
-        context2.fillText('Kn', this.hor_index * 30 + 45, 300 - this.ver_index * 30 - 38.5);
+      if (this.selected) {
+        context2.fillStyle = '#ff0000';
+      }
+      else if (this.isWhite) {
+        context2.fillStyle = '#ffffff';
       }
       else {
-        context2.fillStyle = "#000000";
-        context2.strokeStyle = "#ffffff";
-        
-        context2.fill();
-        context2.stroke();
-
-        context2.font = 'bold 14pt Calibri';
-        context2.textAlign = 'center';
-        context2.fillStyle = '#ffffff';
-
-        context2.fillText('Kn', this.hor_index * 30 + 45, 300 - this.ver_index * 30 - 38.5);
+        context2.fillStyle = '#000000';
       }
 
-      if (this.selected) {
-        context2.strokeStyle = "#ff0000";
+      let x = this.hor_index * 30 + 37;
+      let y = 300 - this.ver_index * 30 - 61;
 
-        context2.stroke();
-      }
+
+
+
+      // Draw the body
+      context2.fillRect(x + 3, y + 17, 10, 10); // Body
+
+      // Draw the base
+      context2.fillRect(x + 2, y + 24, 12, 3); // Base
+
+      context2.fillRect(x + 5, y + 15, 8, 3); // Body
+
+      context2.fillRect(x + 7, y + 13, 8, 6); // Body
+
+      context2.fillRect(x + 6, y + 10, 8, 6); // Body
+
+      context2.fillRect(x + 4, y + 7, 8, 6); // Body
+
+      // Draw the mane (top part of the knight's head)
+      context2.fillRect(x + 2, y + 7, 6, 3); // Left mane
+      context2.fillRect(x + 7, y + 5, 3, 3); // Center mane
     }
 };

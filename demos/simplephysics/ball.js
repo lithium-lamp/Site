@@ -36,14 +36,15 @@ class Ball extends GameObject {
     draw(context) {
       context.beginPath();
       context.arc(this.pos_x, 300 - this.pos_y, this.radius, 0, 2 * Math.PI);
-      context.fillStyle = this.color;
-      context.fill();
+
+      
       if (this.selected) {
-        context.strokeStyle = "red";
+        context.fillStyle = "#ff0000";
       }
       else {
-        context.strokeStyle = "black";
+        context.fillStyle = this.color;
       }
-      context.stroke();
+
+      context.fill();
     }
 };
