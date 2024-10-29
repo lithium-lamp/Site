@@ -191,7 +191,7 @@ const observer = new IntersectionObserver(entries => {
         return;
       }
 
-      //square.classList.remove('square-animation');
+      square.classList.remove('square-animation');
     });
   });
   
