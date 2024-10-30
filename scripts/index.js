@@ -117,6 +117,13 @@ document.addEventListener("DOMContentLoaded", function () {
     .catch(error => console.error("Error fetching JSON data:", error));
 });
 
+function scrollToElement(elementId) {
+    var element = document.getElementById(elementId);
+    var rect = element.getBoundingClientRect();
+
+    window.scrollTo(0, rect.top + window.scrollY);
+}
+
 function scrollSmoothTo(elementId) {
     var element = document.getElementById(elementId);
     element.scrollIntoView({ block: 'start',  behavior: 'smooth' });

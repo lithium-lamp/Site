@@ -2,7 +2,6 @@ section:nth-child(2) {
     background-color: #5f9ea0;
     background-image:  radial-gradient(#e0e0e0 0.5px, #5f9ea0 0.5px);
     background-size: 10px 10px;
-    display: block;
     overflow: hidden;
 }
 
@@ -11,6 +10,7 @@ section:nth-child(2) {
     flex-direction: row;
     width: 100%;
     height: 100%;
+    justify-content: space-between;
 }
 
 
@@ -22,8 +22,8 @@ section:nth-child(2) {
     border: 1px solid #ddd;
     border-radius: 8px;
     background-color: #f9f9f9;
-    width: -webkit-fill-available;
-    height: -webkit-fill-available;
+    /*width: -webkit-fill-available;
+    height: -webkit-fill-available;*/
     text-align: left;
     padding: 1rem 1rem;
     vertical-align: middle;
@@ -129,7 +129,6 @@ section:nth-child(2) {
     border-radius: 8px;
     background-color: #f9f9f9;
     /*width: -webkit-fill-available;*/
-    margin-top: 5px;
     margin-bottom: 5px;
     text-align: left;
     display: inline-block;
@@ -242,6 +241,8 @@ section:nth-child(2) {
     > * {
         flex: 0 0 100%;
     }
+
+    z-index: 1;
 }
 
 .carouselDown {
@@ -254,6 +255,8 @@ section:nth-child(2) {
     > * {
         flex: 0 0 100%;
     }
+
+    z-index: 1;
 }
 
 .groupUp {
@@ -283,18 +286,18 @@ section:nth-child(2) {
 
 @keyframes scrollingUp {
     0% {
-        transform: translateY(0);
+        transform: translateY(-100%);
     }
     100% {
-        transform: translateY(-100%);
+        transform: translateY(-200%);
     }
 }
 @keyframes scrollingDown {
     0% {
-        transform: translateY(-100%);
+        transform: translateY(-200%);
     }
     100% {
-        transform: translateY(0);
+        transform: translateY(-100%);
     }
 }
 
@@ -314,6 +317,7 @@ section:nth-child(2) {
     left: 0;
     top: 0;
     align-content: center;
+    z-index: 5;
 }
 
 .square {

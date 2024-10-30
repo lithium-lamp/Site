@@ -117,11 +117,60 @@
 
         <div style="position: relative; height: 100vh; width: 100vw; padding: 25px; box-sizing: border-box; overflow: hidden; scroll-snap-align: start;">
           <div class="overlap">
-            <div style="flex: 2 200%; order: 1; z-index: 3" id="videoDisplay"></div>
+            <div style="z-index: 3" id="videoDisplay"></div>
 
-            <div id="projcol1" style="flex: 1 150%; order: 2;">
+            <div style="display: flex; position: relative; float: right; right: 0; height: 100%; flex-direction: column; z-index: 3">
+              <!--<div id="gitDisplay"></div>-->
+              <div id="dataDisplay"></div>
+              <div id="contactDisplay"></div>
+            </div>
+          </div>
+        </div>
+        
+        <div style="position: relative; height: 100vh; width: 100vw; padding: 25px; box-sizing: border-box; scroll-snap-align: start;">
+          
+          <div class="overlap">
+            <div style="flex: 2 200%; order: 1; z-index: 3; font-family: Arial, sans-serif;
+            border: 1px solid #dddddd00;
+            width: -webkit-fill-available;
+            height: -webkit-fill-available;
+            padding: 1rem 1rem;"><!--While this may seem strange it is to mimic the sizing of the previous videobox-->
+              
+            </div>
+
+            <div  style="flex: 1 150%; order: 2;">
               <div class="carouselDown">
                 <div class="groupDown">
+                  <div class="card">
+                    <h1 class="trns-text noselect">
+                      PRO
+                    </h1>
+                  </div>
+                  <div class="card">
+                    <h1 class="trns-text noselect">
+                      JEC
+                    </h1>
+                  </div>
+                  <div class="card">
+                    <h1 class="trns-text noselect">
+                      TS...
+                    </h1>
+                  </div>
+                  <div class="card">
+                    <h1 class="trns-text noselect">
+                      PRO
+                    </h1>
+                  </div>
+                  <div class="card">
+                    <h1 class="trns-text noselect">
+                      JEC
+                    </h1>
+                  </div>
+                  <div class="card">
+                    <h1 class="trns-text noselect">
+                      TS...
+                    </h1>
+                  </div>
                   <div class="card">
                     <h1 class="trns-text noselect">
                       PRO
@@ -155,13 +204,72 @@
                       TS...
                     </h1>
                   </div>
+                  <div class="card">
+                    <h1 class="trns-text noselect">
+                      PRO
+                    </h1>
+                  </div>
+                  <div class="card">
+                    <h1 class="trns-text noselect">
+                      JEC
+                    </h1>
+                  </div>
+                  <div class="card">
+                    <h1 class="trns-text noselect">
+                      TS...
+                    </h1>
+                  </div>
+                  <div class="card">
+                    <h1 class="trns-text noselect">
+                      PRO
+                    </h1>
+                  </div>
+                  <div class="card">
+                    <h1 class="trns-text noselect">
+                      JEC
+                    </h1>
+                  </div>
+                  <div class="card">
+                    <h1 class="trns-text noselect">
+                      TS...
+                    </h1>
+                  </div>
                 </div>
               </div>
             </div>
-
-            <div id="projcol2" style="flex: 1 150%; order: 3;">
+            <div  style="flex: 1 150%; order: 3;">
               <div class="carouselUp">
                 <div class="groupUp">
+                  <div class="card">
+                    <h1 class="trns-text noselect">
+                      PRO
+                    </h1>
+                  </div>
+                  <div class="card">
+                    <h1 class="trns-text noselect">
+                      JEC
+                    </h1>
+                  </div>
+                  <div class="card">
+                    <h1 class="trns-text noselect">
+                      TS...
+                    </h1>
+                  </div>
+                  <div class="card">
+                    <h1 class="trns-text noselect">
+                      PRO
+                    </h1>
+                  </div>
+                  <div class="card">
+                    <h1 class="trns-text noselect">
+                      JEC
+                    </h1>
+                  </div>
+                  <div class="card">
+                    <h1 class="trns-text noselect">
+                      TS...
+                    </h1>
+                  </div>
                   <div class="card">
                     <h1 class="trns-text noselect">
                       PRO
@@ -195,32 +303,6 @@
                       TS...
                     </h1>
                   </div>
-                </div>
-              </div>
-            </div>
-
-            <div style="flex: 2 200%; order: 4; display: flex; height: 100%; flex-direction: column; z-index: 3">
-              <!--<div id="gitDisplay"></div>-->
-              <div id="dataDisplay"></div>
-              <div id="contactDisplay"></div>
-            </div>
-          </div>
-        </div>
-        
-        <div style="position: relative; height: 100vh; width: 100vw; padding: 25px; box-sizing: border-box; scroll-snap-align: start;">
-          
-          <div class="overlap">
-            <div style="flex: 2 200%; order: 1; z-index: 3; font-family: Arial, sans-serif;
-            border: 1px solid #dddddd00;
-            width: -webkit-fill-available;
-            height: -webkit-fill-available;
-            padding: 1rem 1rem;"><!--While this may seem strange it is to mimic the sizing of the previous videobox-->
-              
-            </div>
-
-            <div  style="flex: 1 150%; order: 2;">
-              <div class="carouselDown">
-                <div class="groupDown" style="animation-delay: -1.8s;">
                   <div class="card">
                     <h1 class="trns-text noselect">
                       PRO
@@ -236,48 +318,6 @@
                       TS...
                     </h1>
                   </div>
-                </div>
-                <!-- Add `aria-hidden` to hide the duplicated cards from screen readers. -->
-                <div aria-hidden class="groupDown" style="animation-delay: -1.8s;">
-                  <div class="card">
-                    <h1 class="trns-text noselect">
-                      PRO
-                    </h1>
-                  </div>
-                  <div class="card">
-                    <h1 class="trns-text noselect">
-                      JEC
-                    </h1>
-                  </div>
-                  <div class="card">
-                    <h1 class="trns-text noselect">
-                      TS...
-                    </h1>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div  style="flex: 1 150%; order: 3;">
-              <div class="carouselUp">
-                <div class="groupUp" style="animation-delay: -13.2s;">
-                  <div class="card">
-                    <h1 class="trns-text noselect">
-                      PRO
-                    </h1>
-                  </div>
-                  <div class="card">
-                    <h1 class="trns-text noselect">
-                      JEC
-                    </h1>
-                  </div>
-                  <div class="card">
-                    <h1 class="trns-text noselect">
-                      TS...
-                    </h1>
-                  </div>
-                </div>
-                <!-- Add `aria-hidden` to hide the duplicated cards from screen readers. -->
-                <div aria-hidden class="groupUp" style="animation-delay: -13.2s;">
                   <div class="card">
                     <h1 class="trns-text noselect">
                       PRO
@@ -304,7 +344,7 @@
             <div class="square-wrapper"> <!-- MAIN FOCUS OF PART TWO -->
               <div class="square">
                   <div class="projectcontainer">
-                    <div class="project" style="background-color: rgb(104, 207, 231);">
+                    <div class="project" style="background-color: rgb(104, 207, 231);" onclick="scrollToElement('bigprojectarea')">
                       <span>
                         <h1>Portfolio site</h1>
                         <p>You are looking at it now!</p>
@@ -314,7 +354,7 @@
                     </div>
                   </div>
                   <div class="projectcontainer">
-                    <div class="project" style="background-color: rgb(88, 185, 92);">
+                    <div class="project" style="background-color: rgb(88, 185, 92);"  onclick="scrollToElement('bigprojectarea')">
                       <span>
                         <h1>Xcron</h1>
                         <p>An automatic publisher</p>
@@ -324,7 +364,7 @@
                     </div>
                   </div>
                   <div class="projectcontainer">
-                    <div class="project" style="background-color:  rgb(203, 149, 33);">
+                    <div class="project" style="background-color:  rgb(203, 149, 33);" onclick="scrollToElement('bigprojectarea')">
                       <span>
                         <h1>Chess</h1>
                         <p>A chess rest api</p>
@@ -334,7 +374,7 @@
                     </div>
                   </div>
                   <div class="projectcontainer">
-                    <div class="project" style="background-color: rgb(217, 145, 167);">
+                    <div class="project" style="background-color: rgb(217, 145, 167);" onclick="scrollToElement('bigprojectarea')">
                       <span>
                         <h1>Householding site</h1>
                         <p>Keep track of household items</p>
@@ -344,7 +384,7 @@
                     </div>
                   </div>
                   <div class="projectcontainer">
-                    <div class="project" style="background-color: rgb(107, 144, 222);">
+                    <div class="project" style="background-color: rgb(107, 144, 222);" onclick="scrollToElement('bigprojectarea')">
                       <span>
                         <h1>Householding api</h1>
                         <p>Keep track of household items</p>
@@ -354,7 +394,7 @@
                     </div>
                   </div>
                   <div class="projectcontainer">
-                    <div class="project" style="background-color:rgb(189, 200, 87);">
+                    <div class="project" style="background-color:rgb(189, 200, 87);" onclick="scrollToElement('bigprojectarea')">
                       <span>
                         <h1>Face recognition</h1>
                         <p>Locate and distinguish faces</p>
@@ -364,7 +404,7 @@
                     </div>
                   </div>
                   <div class="projectcontainer">
-                    <div class="project" style="background-color: rgb(95, 215, 145)">
+                    <div class="project" style="background-color: rgb(95, 215, 145)" onclick="scrollToElement('bigprojectarea')">
                       <span>
                         <h1>Buoy simulation</h1>
                         <p>A physics simulation</p>
@@ -374,7 +414,7 @@
                     </div>
                   </div>
                   <div class="projectcontainer">
-                    <div class="project" style="background-color: rgb(176, 94, 94);;">
+                    <div class="project" style="background-color: rgb(176, 94, 94);" onclick="scrollToElement('bigprojectarea')">
                       <span>
                         <h1>Coming soon</h1>
                         <p>This is a filler project 🙂</p>
@@ -384,7 +424,7 @@
                     </div>
                   </div>
                   <div class="projectcontainer">
-                    <div class="project" style="background-color: rgb(233, 134, 52);">
+                    <div class="project" style="background-color: rgb(233, 134, 52);" onclick="scrollToElement('bigprojectarea')">
                       <span>
                         <h1>Coming soon</h1>
                         <p>This is a filler project 🙂</p>
@@ -400,10 +440,10 @@
           </div>
         </div>
 
-        <div style="position: relative; height: 100vh; width: 100vw; padding: 25px; box-sizing: border-box; scroll-snap-align: start; overflow: hidden">
+        <div id="bigprojectarea" style="position: relative; height: 100vh; width: 100vw; padding: 25px; box-sizing: border-box; scroll-snap-align: start; overflow: hidden">
           <div class="square-wrapper"> <!-- MAIN FOCUS OF PART TWO -->
-            <div class="square" style="height: 80%; border-color: rgb(104, 207, 231); border-width: 25px; border-style: solid; padding: 0; background-color: rgb(104, 207, 231);">
-              <div class="bigproject" style="background-color: #ffffff; border-color: rgb(104, 207, 231); border-radius: 15px; border-style: solid; border-width: 5px; padding: 15px;">
+            <div class="square" style="height: 80%; border-color: #f9f9f9; border-width: 25px; border-style: solid; padding: 0; background-color: #f9f9f9;">
+              <div class="bigproject" style="background-color: rgb(104, 207, 231); border-color: #f9f9f9; border-radius: 15px; border-style: solid; border-width: 5px; padding: 15px;">
                 <h1>Hello world!</h1>
                 <p>This is some long text. This is some long text. This is some long text. This is some long text. This is some long text. This is some long text. This is some long text. This is some long text. This is some long text. This is some long text. </p>
               </div>
