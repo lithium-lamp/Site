@@ -321,10 +321,10 @@ section:nth-child(2) {
 }
 
 .square {
-    margin: 50px;
-    padding: 25px;
+    /*margin: 50px;
+    padding: 25px;*/
     background: #f9f9f9;
-    border-radius: 25px;
+    border-radius: 10px;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -344,17 +344,21 @@ section:nth-child(2) {
     left: 0;
     flex: 0 1 33%;
     padding: 0;
-    margin: 10px auto;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 2px;
+    margin-right: 2px;
     z-index: 10;
 }
 
 .project {
-    width: 100%;
-    height: 100%;
+    /*width: 100%;
+    height: 100%;*/
     border-radius: 15px;
     top: 0;
     left: 0;
-    margin: auto;
+    /*margin: auto;*/
     box-sizing: border-box;
     padding: 25px;
     max-height: 150px;
@@ -384,15 +388,74 @@ section:nth-child(2) {
 .project p {
     color:#315273;
     font-family: arial;
-    line-height: 2px;
 }
 
 .project hr {
     border: none;
-    width: 1px;
+    padding-left: 0.5px;
+    padding-right: 0.5px;
     background-color: #ddd;
 }
 
 .emoji {
     font-size: 70px;
+}
+
+:root {
+    --portfolio: rgb(104, 207, 231);
+    --xcron: rgb(88, 185, 92);
+    --chess: rgb(203, 149, 33);
+    --housesite: rgb(217, 145, 167);
+    --houseapi: rgb(107, 144, 222);
+    --facerecog: rgb(189, 200, 87);
+    --buoysim: rgb(95, 215, 145);
+    --coming1: rgb(176, 94, 94);
+    --coming2: rgb(233, 134, 52);
+}
+
+.bigproject {
+    background-color: var(--portfolio);
+    transition: 0.2s;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0px 2px 2px rgba(197, 197, 197, 0.74);
+}
+
+.bigproject h1 {
+    color:#0a3c5e;
+    font-family: arial;
+    font-weight: bold;
+}
+
+.bigproject p {
+    color:#315273;
+    font-family: arial;
+}
+
+.bigproject hr {
+    border: none;
+    padding-left: 0.5px;
+    padding-right: 0.5px;
+    background-color: #ddd;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.bigproject a {
+    color:#187ec2;
+    cursor: pointer;
+}
+
+.bigproject a[href^="http"]::after,
+.bigproject a[href^="https://"]::after
+{
+  content: "";
+  width: 11px;
+  height: 11px;
+  margin-left: 4px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z'/%3E%3Cpath fill-rule='evenodd' d='M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z'/%3E%3C/svg%3E");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
 }
