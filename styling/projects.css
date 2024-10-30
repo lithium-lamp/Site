@@ -1,6 +1,6 @@
 section:nth-child(2) {
-    background-color: #5f9ea0;
-    background-image:  radial-gradient(#e0e0e0 0.5px, #5f9ea0 0.5px);
+    background-color: #40abaf;
+    background-image:  radial-gradient(#e0e0e0 0.5px, #40abaf 0.5px);
     background-size: 10px 10px;
     overflow: hidden;
 }
@@ -265,7 +265,7 @@ section:nth-child(2) {
     gap: 20px;
     padding-top: 20px;
     will-change: transform;
-    animation: scrollingUp 15s linear infinite;
+    animation: scrollingUp 45s linear infinite;
 }
 
 .groupDown {
@@ -274,7 +274,7 @@ section:nth-child(2) {
     gap: 20px;
     padding-bottom: 20px;
     will-change: transform;
-    animation: scrollingDown 15s linear infinite;
+    animation: scrollingDown 45s linear infinite;
 }
 
 .card {
