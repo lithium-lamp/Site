@@ -187,6 +187,14 @@ function toggleScroll(checkbox) {
     }
 }
 
+function pausePlayBox() {
+    var element = document.getElementById("play");
+
+    element.checked = true;
+    
+    pauseScroll();
+}
+
 
 
 const observer = new IntersectionObserver(entries => {
