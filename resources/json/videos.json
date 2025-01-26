@@ -1,5 +1,10 @@
 [
     {
+        "title": "Laravel shopper",
+        "link": "https://www.youtube.com/embed/dzM_jfCz-F8?si=Pqx-D0R5cjsde1c0",
+        "date": "26-01-2025"
+    },
+    {
         "title": "Xcron mastodon status post",
         "link": "https://www.youtube.com/embed/HWkpDAQiUxo?si=zOXxYU2-W1QSG3fF",
         "date": "16-10-2024"
@@ -23,5 +28,10 @@
         "title": "Go rest api video demo",
         "link": "https://www.youtube.com/embed/_F4zs_s4yQg?si=Pc8nTfAIYeiNcv1b",
         "date": "20-08-2024"
+    },
+    {
+        "title": "Apache php exercise",
+        "link": "https://www.youtube.com/embed/h72tTIelt6g?si=Q0GdwhHaEWeHd4CR",
+        "date": "26-05-2024"
     }
 ]
